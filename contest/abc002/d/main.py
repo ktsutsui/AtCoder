@@ -13,7 +13,6 @@ for bit in range(1<<N):
             arr.append(i)
     ok = True
     n = len(arr)
-    print(n)
     for i in range(n):
         for j in range(i+1, n):
             if not (arr[j] in rel[arr[i]] and arr[i] in rel[arr[j]]):
